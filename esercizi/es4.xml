@@ -6,3 +6,4 @@
 <!ELEMENT header(#PCDATA)>
 <!ELEMENT facsimile(#PCDATA)>
 <!ELEMENT text(#PCDATA)>
+
