@@ -9,12 +9,13 @@
 </body>
 
 <!--correzione (validata con xmllint) e aggiunte richieste: -->
-<!--
+
 <body>
     <element>
         <p></p>
     </element>
     <sibling>
         <child></child>
-    </sibling></body>
--->
+    </sibling>
+</body>
+
