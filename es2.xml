@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- es. 2: validare un file xml non correttamente annidato, commentarlo, aggiungere
+ child e sibling ad un elemento-->
+<body>
+    <element>
+      <p> <!-- l'elemento p viene chiuso dopo element, pur trovandosi gerarchicamente al suo interno-->
+    </element>
+      </p>
+</body>
+
+<!--correzione (validata con xmllint) e aggiunte richieste: -->
+<!--
+<body>
+    <element>
+        <p></p>
+    </element>
+    <sibling>
+        <child></child>
+    </sibling></body>
+-->
