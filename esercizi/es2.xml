@@ -12,10 +12,10 @@
 
 <body>
     <element>
-        <p></p>
+        <p>P è l'elemento figlio di element</p>
     </element>
     <sibling>
-        <child></child>
+        <child>Sibling è l'elemento fratello di element, child è l'elemento figlio di sibling</child>
     </sibling>
 </body>
 
