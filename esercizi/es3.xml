@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- terzo esercizio: inserire all’interno di un tag un frammento di codice HTML (non leggibile dal parser)-->
+<body>
+  <html>
+    <![CDATA[
+    <div class="container">
+      <span>testo</span>
+    </div>
+    ]]>
+  </html>
+</body>
+<!--validato con xmllint-->
