@@ -1,9 +1,0 @@
-<!-- esercizio: dichiarazione DTD -->
-
-<!--radice: TEI-->
-<!ELEMENT TEI (header, facsimile?, text+)>
-<!-- figli con contenuto testuale piano-->
-<!ELEMENT header(#PCDATA)>
-<!ELEMENT facsimile(#PCDATA)>
-<!ELEMENT text(#PCDATA)>
-
