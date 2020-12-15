@@ -1,3 +1,6 @@
+<!-- ESERCIZIO: Creare un file esterno con estensione .dtd prima di includerlo
+in un prologo XML. -->
+
 <!DOCTYPE root [
   <!ELEMENT root (child, sibling)>
   <!ELEMENT child #PCDATA>
