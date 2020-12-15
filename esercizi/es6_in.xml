@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- ESERCIZIO: includere all’interno di un documento XML la
+dichiarazione del tipo, definire internamente gli elementi e
+gli attributi e validare. -->
+<!--DICHIARAZIONE DTD INTERNA-->
+<!DOCTYPE root [
+  <!ELEMENT root (child, sibling)>
+  <!ELEMENT child #PCDATA>
+  <!ELEMENT sibling #PCDATA>
+]>
+<!-- CODICE-->
+<root>
+
+  <child>
+    Testo
+  </child>
+
+  <sibling>
+    Testo
+  </sibling>
+
+</root>
+
+<!-- validato con xmllint-->

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- ESERCIZIO: inserire nel prologo di un documento XML la dichiarazione
+del tipo di documento e validare. -->
+<!--COLLEGAMENTO A DTD ESTERNA-->
+<!DOCTYPE root SYSTEM "./es6_out.dtd">
+<!--CODICE-->
+<root>
+  <child>
+    Testo
+  </child>
+
+  <sibling>
+    Testo
+  </sibling>
+</root>
+<!-- validato con xmllint-->

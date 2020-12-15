@@ -1,0 +1,5 @@
+<!DOCTYPE root [
+  <!ELEMENT root (child, sibling)>
+  <!ELEMENT child #PCDATA>
+  <!ELEMENT sibling #PCDATA>
+]>
