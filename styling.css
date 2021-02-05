@@ -1,0 +1,142 @@
+/*Progetto per l'esame di Codifica di Testi, aa 2019/20
+Codifica di cartoline storiche della Grande Guerra
+A cura di: Francesca Poli, mat. 560190*/
+html{
+    background-color: antiquewhite;
+}
+
+body{
+    font-family: "Bookman Old Style";
+    font: auto;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+header h1{
+    font-family: "Tangerine";
+    font: italic;
+    font-size: 5em;
+    color: maroon;
+}
+
+.info{
+    width: 50%;
+    display: inline-block;
+}
+
+.cartolina{
+    display: inline-block; 
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.nomecart{
+    font-family:"Tangerine";
+    font-size: 3em;
+    color: maroon;
+}
+
+.wrapper{ 
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.images{
+    width: 70%;
+    height: auto;
+    position: relative;
+    display:inline-block;
+}
+
+.elements {
+    display:block; 
+    text-align: left;
+    width:20%;
+    height: fit-content;
+    float: right;
+    background-color: cornsilk;
+    padding: 2%;
+}
+
+.el{
+    margin: 0;
+}
+
+.map{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    background-size:auto; 
+}
+
+.facsfronte{
+    float: left;
+    text-align: left;
+    width:28%;
+    height: auto;
+}
+
+.facsretro{
+    float: right;
+    text-align: right;
+    width:70%;
+    height: auto;
+
+} 
+
+.text1{
+    padding: 2%; 
+    text-align: left;
+    float:left;  
+    width:20%; 
+    height:auto; 
+}
+
+.text2{
+    padding: 2%;
+    text-align: left;
+    float:left; 
+    width:30%; 
+    height:auto;
+    border-left-style: double;
+    border-left-color: rosybrown;
+    border-right-style: double;
+    border-right-color: rosybrown;
+     
+}
+
+.text3{
+    padding: 2%;
+    text-align: left;
+    float:left; 
+    width:20%; 
+    height:auto;
+}
+
+footer{
+    border-top-style: groove;
+    border-top-color: maroon;
+    padding: 2%;
+    font-family: "Book Antiqua";
+    color: maroon;
+    margin-top: 2%;
+}
+
+.is-hidden{
+    display:none;
+}
+
+.comparsa{
+    text-align: left;
+    width: 100%;
+}
+
