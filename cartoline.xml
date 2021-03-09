@@ -1,0 +1,965 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+<?xml-stylesheet type="text/xsl" href="sheet.xsl"?>
+<!--Progetto per l'esame di Codifica di Testi, aa 2019/20
+Codifica di cartoline storiche della Grande Guerra
+A cura di: Francesca Poli, mat. 560190-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <!--titolo del progetto-->
+                <title>Affettuosamente tuo, Giovannino</title>
+                <!--trascrizione e codifica cura di-->
+                <respStmt>
+                    <resp>Trascrizione e codifica TEI a cura di </resp> <persName xml:id='FP'>Francesca Poli</persName>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Studenti di <name>Codifica di Testi</name>, CdL in <name>Informatica Umanistica</name> presso l'<orgName type="university">Università di Pisa</orgName>,
+                    <!-- COMPILAZIONE -->
+                    <date>2020</date>
+                </edition>
+                <!-- PERSONE -->
+                <respStmt>
+                    <resp>Encoding</resp>
+                    <name xml:id="XY1" ref="#FP">Francesca Poli</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Compilatore</resp>
+                    <name xml:id="XY2">Tommaso Castagneto</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Responsabile scientifico</resp>
+                    <name xml:id="GP">Giacomo Paolicchi</name>
+                    <name xml:id="ES">Enrica Salvatori</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Funzionario responsabile</resp>
+                    <name xml:id="MR">Marzia Ratti</name>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>
+                    <orgName type="university">Università di <placeName ref="#PI">Pisa, </placeName></orgName> 
+                </publisher> 
+                <distributor>
+                    <orgName type="lab">Laboratorio di Cultura Digitale</orgName>
+                </distributor>
+                <pubPlace>
+                    <placeName ref="#PI">Pisa</placeName>
+                </pubPlace>
+                <availability status="restricted">
+                    <p>Disponibile solo con licenza</p>
+                </availability>
+            </publicationStmt>
+            
+            <sourceDesc>
+            <!--ente di appartenenza delle cartoline originali-->
+                <bibl type="cartolina">
+                    <author>
+                        <persName ref="#Giovanni">Giovanni Coliola</persName>
+                    </author>
+                    <date>30/06/1917</date>
+
+                    <respStmt>
+                        <resp>Ente di appartenenza delle cartoline originali: </resp>
+                        <name>Sistema bibliotecario museale del <placeName ref="#SP">Comune di La Spezia</placeName> </name>
+                    </respStmt>
+
+                    <respStmt>
+                        <resp>Le cartoline originali sono conservate nel</resp>
+                        <name type="institution"> Museo Civico Etnografico <persName>"Giovanni Podenzana"</persName> </name>
+                    </respStmt>
+                </bibl>
+
+                <listPerson>
+                    <person xml:id="Giovanni" role="sender">
+                        <persName>
+                            <forename>Giovanni</forename>
+                            <addName type="nickname">"Giovannino"</addName>
+                            <surname>Coliola</surname>
+                        </persName>
+                        <sex value="M">uomo</sex>
+                        <nationality key="IT">italiano</nationality>
+                        <langKnowledge> 
+                            <langKnown tag="it-IT">italiano</langKnown>
+                        </langKnowledge>
+                        <occupation n="1">[maggiore]</occupation>
+                    </person>
+
+                    <person xml:id="Oliva" role="addressee">
+                        <persName>
+                            <forename>Oliva</forename>
+                            <surname>Turtura</surname>
+                        </persName>
+                        <sex value="F">donna</sex>
+                        <nationality key="IT">italiana</nationality>
+                        <langKnowledge> 
+                            <langKnown tag="it-IT">italiano</langKnown>
+                        </langKnowledge>
+                    </person>
+
+                    <person xml:id="ADOB" role="artist">
+                        <persName>
+                            <forename>Angelo</forename>
+                            <surname>Dall'Oca Bianca</surname>
+                        </persName>
+                        <sex value="M">uomo</sex>
+                        <nationality key="IT">italiano</nationality>
+                        <occupation>pittore</occupation>
+                    </person>
+
+                    <person xml:id="Nanni" role="artist">
+                        <persName>
+                            <forename>Giovanni</forename>
+                            <surname>Nanni</surname>
+                        </persName>
+                        <sex value="M">uomo</sex>
+                        <nationality key="IT">italiano</nationality>
+                        <occupation>pittore</occupation>
+                    </person>
+
+                </listPerson>
+
+                <listRelation type="personal"> 
+                  <relation name="fidanzamento" mutual="#Giovanni #Oliva"/>
+                </listRelation>
+
+                <listPlace>
+                    <place xml:id="MO">
+                        <placeName type="comune"> Modena </placeName>
+                        <location>
+                            <district type="provincia">Modena</district>
+                            <region>Emilia-Romagna</region>
+                            <country key="IT">Italia</country>
+                        </location>
+                    </place>
+
+                    <place xml:id="RA">
+                        <placeName type="comune"> Ravenna </placeName>
+                        <location>
+                            <settlement type="località">città</settlement>
+                            <district type="comune">Ravenna</district>
+                            <district type="provincia">Ravenna</district>
+                            <region>Emilia-Romagna</region>
+                            <country key="IT">Italia</country>
+                        </location>
+                    </place>
+
+                    <place xml:id="SP">
+                        <placeName type="comune"> La Spezia </placeName>
+                        <location>
+                            <settlement type="località">città</settlement>
+                            <district type="comune">La Spezia</district>
+                            <district type="provincia">La Spezia</district>
+                            <region>Liguria</region>
+                            <country key="IT">Italia</country>
+                        </location>
+                    </place>
+
+                    <place xml:id="PI">
+                        <placeName type="comune"> Pisa </placeName>
+                        <location>
+                            <settlement type="località">città</settlement>
+                            <district type="comune">Pisa</district>
+                            <district type="provincia">Pisa</district>
+                            <region>Toscana</region>
+                            <country key="IT">Italia</country>
+                        </location>
+                    </place>
+
+                    <place xml:id="MI">
+                        <placeName type="comune"> Milano </placeName>
+                        <location>
+                            <settlement type="località">città</settlement>
+                            <district type="comune">Milano</district>
+                            <district type="provincia">Milano</district>
+                            <region>Lombardia</region>
+                            <country key="IT">Italia</country>
+                        </location>
+                    </place>
+
+                     <place xml:id="VR">
+                        <placeName type="comune"> Verona </placeName>
+                        <location>
+                            <settlement type="località">città</settlement>
+                            <district type="comune">Verona</district>
+                            <district type="provincia">Verona</district>
+                            <region>Veneto</region>
+                            <country key="IT">Italia</country>
+                        </location>
+                    </place>
+
+                    <place xml:id="VE">
+                        <placeName type="comune"> Venezia </placeName>
+                        <location>
+                            <settlement type="località">città</settlement>
+                            <district type="comune">Venezia</district>
+                            <region>Veneto</region>
+                            <country key="IT">Italia</country>
+                        </location>
+                    </place>
+                </listPlace>
+            </sourceDesc>
+        </fileDesc>
+
+        <profileDesc> 
+            <langUsage>
+                <language ident="it">Italiano</language>
+            </langUsage>
+        </profileDesc>
+
+    </teiHeader>
+
+    <!--CARTOLINA 105-->
+    <TEI xml:id="c105">
+
+        <teiHeader>
+            <fileDesc>
+                <titleStmt>
+                    <title>L'ora della sera</title>
+                    <respStmt>
+                        <resp>transcription by</resp>
+                        <name ref="#FP">Francesca Poli</name>
+                    </respStmt>
+
+                    <respStmt>
+                        <resp>Ente di Appartenenza</resp>
+                        <name type="comune" ref="#SP">Comune della Spezia</name>
+                    </respStmt>
+                </titleStmt>
+
+                <editionStmt>
+                    <edition>Studenti di <name>Codifica di Testi</name>, anno accademico <date>2019/2020</date>, Corso di Laurea di <name>Informatica Umanistica</name>, <orgName type="university">Università di Pisa</orgName>
+                        <!-- COMPILAZIONE -->
+                        <date>2018</date>
+                    </edition>
+
+                    <respStmt>
+                        <resp>encoding by</resp>
+                        <name ref="#XY1">Francesca Poli</name>
+                    </respStmt>
+
+                    <respStmt>
+                        <resp>Compilatore</resp>
+                        <name ref="#XY2">Tommaso Castagneto</name>
+                    </respStmt>
+                    <respStmt>
+                        <resp>Responsabile scientifico</resp>
+                        <name ref="#GP">Giacomo Paolicchi</name>
+                        <name ref="#ES">Enrica Salvatori</name>
+                    </respStmt>
+                    <respStmt>
+                        <resp>Funzionario responsabile</resp>
+                        <name ref="#MR">Marzia Ratti</name>
+                    </respStmt>
+                </editionStmt>
+
+                <publicationStmt>
+                    <publisher>
+                        <orgName type="university">Unipi</orgName>
+                    </publisher>
+                    <pubPlace>
+                        <placeName ref="#PI">Pisa</placeName>
+                    </pubPlace>
+                    <availability>
+                        <p>Available under licence only</p>
+                    </availability>
+                    <date when="2020">2020</date>
+                    <distributor>
+                        <orgName>LabCD</orgName>
+                    </distributor>
+                    <address>
+                        <addrLine>Laboratorio di Cultura Digitale - <orgName type="university">Università di Pisa</orgName> </addrLine>
+                        <addrLine> <placeName ref="#PI">Pisa</placeName> </addrLine>
+                    </address>
+                </publicationStmt>
+
+                <notesStmt>
+                    <note>Sul retro riporta la stampa "Proprietà artistica riservata <abbr corresp="numero">n</abbr> <num>205</num>"</note>
+                </notesStmt>
+
+                <sourceDesc>
+                    <bibl>
+                        <title type="custom" resp="#ES">[Donna con cane]</title>
+                        <author ref="#Nanni">Giovanni Nanni</author>
+                        <!-- CRONOLOGIA, attenzione si riferisce solo alla data di stampa -->
+                        <date>1917</date>
+                    </bibl>
+
+                    <msDesc>
+
+                        <msIdentifier>
+                            <country>Italia</country>
+                            <settlement> <placeName ref="SP">La Spezia</placeName> (SP)</settlement>
+                            <!-- COLLOCAZIONE SPECIFICA -->
+                            <repository>
+                                <name> Museo Civico Etnografico</name> <persName>"Giovanni Podenzana"</persName>, Sezione dei cimeli garibaldini e della Prima Guerrra Mondiale
+                            </repository>
+                            <!-- CODICE IDENTIFICATIVO -->
+                            <idno>7694_105_001/002</idno>
+                        </msIdentifier>
+
+                        <!-- Informazioni sul contenuto della cartolina -->
+                        <msContents>
+                            <summary>Cartolina Artistica</summary>
+                            <textLang>Italiano</textLang>
+                        </msContents>
+
+                        <physDesc>
+                            <objectDesc>
+                                <supportDesc>
+                                    <support>
+                                        <objectType>Cartolina</objectType>
+                                        <material>Carta</material>
+                                        <dimensions unit="cm">
+                                            <height>9</height>
+                                            <width>14</width>
+                                        </dimensions>
+                                        <stamp>francobollo - Regno d'Italia</stamp>
+                                        <stamp>timbro - illeggibile</stamp>
+                                        <stamp>timbro - Ferrovia di <placeName ref="#MO">Modena</placeName> </stamp>
+                                    </support>
+                                    <condition>Buono</condition>
+                                </supportDesc>
+                            </objectDesc>
+                        </physDesc>
+
+                    </msDesc>
+
+                    <listPerson>
+                        <person role="sender">
+                            <persName ref="#Giovanni">
+                                <forename>Giovanni</forename>
+                                <addName type="nickname">"Giovannino"</addName>
+                                <surname>Coliola</surname>
+                            </persName>
+                            <sex value="M">uomo</sex>
+                            <nationality key="IT">italiano</nationality>
+                            <langKnowledge>
+                                <langKnown tag="it-IT">italiano</langKnown>
+                            </langKnowledge>
+                            <occupation n="1">[maggiore]</occupation>
+                        </person>
+
+                        <person  role="addressee">
+                            <persName ref="#Oliva">
+                                <forename>Oliva</forename>
+                                <surname>Turtura</surname>
+                            </persName>
+                            <sex value="F">donna</sex>
+                            <nationality key="IT">italiana</nationality>
+                            <langKnowledge>
+                                <langKnown tag="it-IT">italiano</langKnown>
+                            </langKnowledge>
+                        </person>
+
+                        <person role="artist">
+                            <persName ref="#Nanni">
+                                <forename>Giovanni</forename>
+                                <surname>Nanni</surname>
+                            </persName>
+                            <sex value="M">uomo</sex>
+                            <nationality key="IT">italiana</nationality>
+                            <occupation>pittore</occupation>
+                        </person>
+                    </listPerson>
+
+                    <listPlace>
+                        <place>
+                            <placeName type="comune" ref="#RA"> Ravenna </placeName>
+                            <location>
+                                <settlement type="località">città</settlement>
+                                <district type="comune">Ravenna</district>
+                                <district type="provincia">Ravenna</district>
+                                <region>Emilia-Romagna</region>
+                                <country key="IT">Italia</country>
+                            </location>
+                        </place>
+
+                        <place>
+                            <placeName ref ="#MO" type="comune"> Modena </placeName>
+                            <location>
+                                <district type="provincia">Modena</district>
+                                <region>Emilia-Romagna</region>
+                                <country key="IT">Italia</country>
+                            </location>
+                        </place>
+
+                    </listPlace>
+
+                    <listRelation type="personal">
+                        <relation name="fidanzamento" mutual="#Giovanni #Oliva"/>
+                    </listRelation>
+
+                </sourceDesc>
+            </fileDesc>
+
+            <profileDesc>
+                <correspDesc>
+                    <correspAction type="sent">
+                        <persName ref="#Giovanni"/>
+                        <placeName ref="#MO">Modena</placeName>
+                        <!-- DATA data di invio da timbro (postage) o da manoscritto (writing) -->
+                        <date type="postage" when="1917"> <unclear>29/?/1917</unclear>   </date>
+                        <date type="writing" when="1917-06-06">06/06/1917</date>
+                    </correspAction>
+                    <correspAction type="received">
+                        <persName ref="#Oliva">Oliva Turtura</persName>
+                        <placeName ref="#RA">Ravenna</placeName>
+                    </correspAction>
+                </correspDesc>
+
+                <langUsage>
+                    <language ident="it-IT">italiano</language>
+                </langUsage>
+            </profileDesc>
+        </teiHeader>
+
+
+        <facsimile>
+            <!--riproduzione del fronte-->
+            <surface xml:id="c105_fronte">
+                <graphic url='img/r7694-105F.jpg' width='500px' height='779px' />
+
+                <zone xml:id="artista" ulx="393" uly="606" lrx="471" lry="629"  />
+                <zone xml:id="disegno" ulx="0" uly="1" lrx="499" lry="780" />
+            </surface>
+
+            <surface xml:id="c105_retro">
+
+                <graphic url='img/7694-105R.jpg' width='1656px' height='1068px' />
+
+                <zone xml:id="ns105" ulx="1094" uly="336" lrx="1237" lry="392" />
+                <zone xml:id="stamps105" ulx="740" uly="4" lrx="1636" lry="413" />
+
+                <zone xml:id="diritti105" ulx="18" uly="392" lrx="59" lry="997" />
+                
+                <zone xml:id="addr1" ulx="745" uly="399" lrx="1573" lry="568" />
+                <zone xml:id="addr2" ulx="746" uly="568" lrx="1582" lry="693" />
+                <zone xml:id="addr3" ulx="746" uly="692" lrx="1572" lry="832" />
+                <zone xml:id="addr4" ulx="940" uly="832" lrx="1594" lry="1019" />
+
+                <zone xml:id="dateline105" ulx="661" uly="212" lrx="738" lry="838" />
+                <zone xml:id="line1" ulx="595" uly="50" lrx="698" lry="1053" />
+                <zone xml:id="line2" ulx="511" uly="15" lrx="591" lry="1055" />
+                <zone xml:id="line3" ulx="425" uly="14" lrx="514" lry="1063" />
+                <zone xml:id="line4" ulx="338" uly="14" lrx="427" lry="1056" />
+                <zone xml:id="line5" ulx="269" uly="13" lrx="349" lry="1056" />
+                <zone xml:id="line6" ulx="189" uly="19" lrx="272" lry="1061" />
+                <zone xml:id="line7" ulx="100" uly="21" lrx="188" lry="1058" />
+                <zone xml:id="line8" ulx="22" uly="28" lrx="116" lry="420" />
+                <zone xml:id="sign105" ulx="3" uly="303" lrx="124" lry="1063" />
+               
+
+            </surface>
+
+        </facsimile>
+
+        <text xml:id="descdisegno">
+            <body>
+                <div type="printed" facs="#disegno">
+                    <figure>
+                        <graphic url="img/7694-105F.jpg" />
+                        <figDesc>Donna con cane al fianco</figDesc>
+                    </figure>
+                    <p facs="#artista"> <persName ref="#Nanni">Giovanni Nanni</persName> </p>
+                </div>
+            </body>
+        </text>
+
+
+        <text xml:id="timbri">
+            <body>
+                <div facs="#stamps105">
+                    <div type="stamp">
+                        <p>
+                            <stamp type="postmark">
+                                <stamp>timbro - <unclear reason="faded">8</unclear></stamp>
+                                <stamp>timbro - <num>2</num></stamp>
+                                <stamp>timbro - Ferrovia di <placeName ref="#MO">Modena</placeName>
+                                    <date><unclear>-7.8 7.12</unclear></date>
+                                </stamp>
+                                <stamp>timbro - Ferrovia di <placeName ref="#MO">Modena</placeName>
+                                    <date><unclear>-7.6.19.12</unclear></date>
+                                </stamp>
+                            </stamp>
+                        </p>
+
+                    </div>
+                    <div type="stamp">
+                        <p>
+                            <!--FRANCOBOLLO-->
+                            <stamp type="postage"> Francobollo <orgName type="service">Poste Italiane</orgName> da 5 centesimi </stamp>
+                        </p>
+                    </div>
+                </div>
+
+                <div type="handwritten" facs="#ns105">
+                    <p> Numero di serie per archiviazione: <num>105</num>  </p>
+                </div>
+
+                <div type="printed" facs="#diritti105">
+                    <p>Proprietà artistica riservata <abbr corresp="Numero">N°</abbr> <num>205-6</num>    </p>
+                </div>
+            </body>
+        </text>
+
+        <!--INDIRIZZO RICEVENTE-->
+        <text xml:id="address105">
+            <body>
+                <div>
+                    <ab>
+                        <address>
+                            <addrLine facs="#addr1">
+                                <rs> <!--referring string-->
+                                    <abbr corresp="Gentilissima" type="opening formula">Gent.ma</abbr>
+                                    <abbr corresp="Signorina" type="opening formula">Sig.na</abbr>
+                                </rs>
+                            </addrLine>
+
+                            <addrLine facs="#addr2">
+                                <persName ref="#Oliva">
+                                    <forename>Oliva</forename> <surname>Turtura</surname>
+                                </persName>
+                            </addrLine>
+
+                            <street facs="#addr3">Via <name> Girolamo Ro<c corresp="s">&#x17f;</c>si </name> <num>58</num> </street>
+
+                            <addrLine facs="#addr4">
+                                <placeName ref="#RA">Ravenna</placeName>
+                            </addrLine>
+                        </address>
+                    </ab>
+                </div>
+            </body>
+        </text>
+
+            <!--TESTO EFFETTIVO-->
+            <text xml:id="nostalgia">
+                <body>
+                    <div type="handwritten">
+                        <opener>
+                            <dateline facs="#dateline105" n="1">
+                                <placeName ref="#MO">- Modena</placeName>
+                                <date when="1917-06-06">lì 6/6 1917 -</date>
+                            </dateline>
+                        </opener>
+                        
+                        <p>
+                            <s n="1"><lb break="no" facs="#line1" />L'ora della sera è triste per me, l'ora</s>
+                            <s n="2"><lb break="no" facs="#line2" />in cui l'ombra rinvade le cose, l'ani-</s>
+                            <s n="3"><lb break="no" facs="#line3" />mo si schiude agli affetti e il ricor-</s>
+                            <s n="4"><lb break="no" facs="#line4" />do delle care persone lontane trionfa</s>
+                            <s n="5"><lb break="no" facs="#line5" />su tutti i sentimenti e si fa tiranno.</s>
+                        </p>
+                        <p>
+                            <s n="6"><lb break="no" facs="#line6"/>Perché non averti qui? Perché non</s>
+                            <s n="7"><lb break="no" facs="#line7"/>pos<c corresp="s">&#x17f;</c>iamo respirare insieme le dolcezze</s>
+                            <s n="8"><lb break="no" facs="#line8"/>di quest'ora?</s>
+                        </p>
+
+                        <closer>
+                            <signed facs="#sign105">
+                                <persName ref="#Giovanni" facs="">Giovannino</persName>
+                            </signed>
+                        </closer>
+                    </div>
+                </body>
+            </text>
+        </TEI>
+
+    <!--CARTOLINA 192-->
+    <TEI xml:id="c192">
+
+        <teiHeader>
+            <fileDesc>
+                <titleStmt>
+                    <title>Un dolce pensiero</title>
+
+                    <respStmt>
+                        <resp>transcription by</resp>
+                        <name ref="#FP">Francesca Poli</name>
+                    </respStmt>
+
+                    <respStmt>
+                        <resp>Ente di Appartenenza</resp>
+                        <name type="comune" ref="#SP">Comune della Spezia</name>
+                    </respStmt>
+                </titleStmt>
+
+                <editionStmt>
+                    <edition>Studenti di <name>Codifica di Testi</name>, anno accademico <date>2019/2020</date>,Corso di Laurea di <name>Informatica Umanistica</name>, <orgName type="university">Università di Pisa</orgName>
+                        <!-- COMPILAZIONE -->
+                        <date>2018</date>
+                    </edition>
+
+                    <respStmt>
+                        <resp>encoding by</resp>
+                        <name ref="#XY1">Francesca Poli</name>
+                    </respStmt>
+
+                    <respStmt>
+                        <resp>Compilatore</resp>
+                        <name ref="#XY2">Tommaso Castagneto</name>
+                    </respStmt>
+                    <respStmt>
+                        <resp>Responsabile scientifico</resp>
+                        <name ref="#GP">Giacomo Paolicchi</name>
+                        <name ref="#ES">Enrica Salvatori</name>
+                    </respStmt>
+                    <respStmt>
+                        <resp>Funzionario responsabile</resp>
+                        <name ref="#MR">Marzia Ratti</name>
+                    </respStmt>
+                </editionStmt>
+
+                <publicationStmt>
+                    <publisher>
+                        <orgName type="university">Unipi</orgName>
+                    </publisher>
+                    <pubPlace>
+                        <placeName ref="#PI">Pisa</placeName>
+                    </pubPlace>
+                    <availability>
+                        <p>Available under licence only</p>
+                    </availability>
+                    <date when="2020">2020</date>
+                    <distributor>
+                        <orgName>LabCD</orgName>
+                    </distributor>
+                    <address>
+                        <addrLine>Laboratorio di Cultura Digitale - <orgName type="university">Università di Pisa</orgName> </addrLine>
+                        <addrLine> <placeName ref="#PI">Pisa</placeName> </addrLine>
+                    </address>
+                </publicationStmt>
+
+                <notesStmt>
+                    <note>Sul fronte riporta il titolo dell'opera  e "<placeName>Venezia</placeName> , Galleria d'arte moderna", sul retro troviamo diverse stampe: <name>"Edizioni C.Schenone&#38;C."</name>, "Diritti riservati", <settlement>"via Magentan 10 Milano"</settlement> e "Cartolina Postale Carte Postale"</note>
+                </notesStmt>
+
+                <sourceDesc>
+                    <bibl>
+                        <title type="custom" resp="#ES">Piazza delle erbe a Verona</title>
+                        <author ref="#ADOB">Angelo dall'oca bianca</author>
+                        <publisher>Edizioni C. Schenone&#38;C.</publisher>
+                        <pubPlace ref="#VR">Verona</pubPlace>
+                        <!-- CRONOLOGIA, attenzione si riferisce solo alla data di stampa -->
+                        <date>1917</date>
+                    </bibl>
+
+                    <msDesc>
+                        <msIdentifier>
+                            <country>Italia</country>
+                            <settlement> <placeName ref="SP">La Spezia</placeName> (SP)</settlement>
+                            <!-- COLLOCAZIONE SPECIFICA -->
+                            <repository>
+                                <name type="institution"> Museo Civico Etnografico <persName>"Giovanni Podenzana"</persName> </name>, Sezione dei cimeli garibaldini e della Prima Guerrra Mondiale
+                            </repository>
+                            <!-- CODICE IDENTIFICATIVO -->
+                            <idno>7694_192_001/002</idno>
+                        </msIdentifier>
+
+                        <!-- Informazioni sul contenuto della cartolina -->
+                        <msContents>
+                            <summary>Cartolina Artistica</summary>
+                            <textLang>Italiano</textLang>
+                        </msContents>
+
+                        <physDesc>
+                            <objectDesc>
+                                <supportDesc>
+                                    <support>
+                                        <objectType>Cartolina</objectType>
+                                        <material>Carta</material>
+                                        <dimensions unit="cm">
+                                            <height>9</height>
+                                            <width>14</width>
+                                        </dimensions>
+                                        <stamp>francobollo - Regno d'Italia</stamp>
+                                        <stamp>timbro - Ferrovia di <placeName ref="#MO">Modena</placeName> </stamp>
+                                    </support>
+                                    <condition>Buono</condition>
+                                </supportDesc>
+                            </objectDesc>
+                        </physDesc>
+
+                    </msDesc>
+
+                    <!-- NOMI -->
+
+                    <listPerson>
+                        <person role="sender">
+                            <persName ref="#Giovanni">
+                                <forename>Giovanni</forename>
+                                <addName type="nickname">"Giovannino"</addName>
+                                <surname>Coliola</surname>
+                            </persName>
+                            <sex value="M">uomo</sex>
+                            <nationality key="IT">italiano</nationality>
+                            <langKnowledge>
+                                <langKnown tag="it-IT">italiano</langKnown>
+                            </langKnowledge>
+                            <occupation n="1">Maggiore</occupation>
+                        </person>
+
+                        <person role="addressee">
+                            <persName ref="#Oliva">
+                                <forename>Oliva</forename>
+                                <surname>Turtura</surname>
+                            </persName>
+                            <sex value="F">donna</sex>
+                            <nationality key="IT">italiana</nationality>
+                            <langKnowledge>
+                                <langKnown tag="it-IT">italiano</langKnown>
+                            </langKnowledge>
+                        </person>
+
+                        <person role="artist">
+                            <persName ref="#ADOB">
+                                <forename>Angelo</forename>
+                                <surname>Dall'Oca Bianca</surname>
+                            </persName>
+                            <sex value="M">uomo</sex>
+                            <nationality key="IT">italiana</nationality>
+                            <occupation>pittore</occupation>
+                        </person>
+                    </listPerson>
+
+                    <listPlace>
+                        <place>
+                            <placeName ref="#RA" type="comune"> Ravenna </placeName>
+                            <location>
+                                <settlement type="località">città</settlement>
+                                <district type="comune">Ravenna</district>
+                                <district type="provincia">Ravenna</district>
+                                <region>Emilia-Romagna</region>
+                                <country key="IT">Italia</country>
+                            </location>
+                        </place>
+
+                        <place>
+                            <placeName ref="#MO" type="comune"> Modena </placeName>
+                            <location>
+                                <district type="provincia">Modena</district>
+                                <region>Emilia-Romagna</region>
+                                <country key="IT">Italia</country>
+                            </location>
+                        </place>
+
+                        <place>
+                            <placeName ref="#VR" type="comune"> Verona </placeName>
+                            <location>
+                                <settlement type="località">città</settlement>
+                                <district type="comune">Verona</district>
+                                <district type="provincia">Verona</district>
+                                <region>Veneto</region>
+                                <country key="IT">Italia</country>
+                            </location>
+                        </place>
+
+                        <place>
+                            <placeName ref="#VE" type="comune"> Venezia </placeName>
+                            <location>
+                                <settlement type="località">città</settlement>
+                                <district type="comune">Venezia</district>
+                                <region>Veneto</region>
+                                <country key="IT">Italia</country>
+                            </location>
+                        </place>
+                    </listPlace>
+
+                    <listRelation type="personal">
+                        <relation name="fidanzamento" mutual="#Giovanni #Oliva"/>
+                    </listRelation>
+
+                </sourceDesc>
+            </fileDesc>
+
+            <profileDesc>
+                <correspDesc>
+                    <correspAction type="sent">
+                        <persName ref="#Giovanni"/>
+                        <placeName ref="#MO">Modena</placeName>
+                        <!-- DATA data di invio da timbro (postage) o da manoscritto (writing) -->
+                        <date type="postage" when="1917"> <unclear>29/?/1917</unclear>   </date>
+                        <date type="writing" when="1917-06-30">30/06/1917</date>
+                    </correspAction>
+                    <correspAction type="received">
+                        <persName ref="#Oliva">Oliva Turtura</persName>
+                        <placeName ref="#RA">Ravenna</placeName>
+                    </correspAction>
+                </correspDesc>
+
+                <langUsage>
+                    <language ident="it-IT">italiano</language>
+                </langUsage>
+            </profileDesc>
+
+        </teiHeader>
+
+        <facsimile>
+            <!--riproduzione del fronte-->
+            <surface xml:id="c192_fronte">
+                <graphic url='img/7694-192F.jpg' width='524px' height='817px' />
+
+                <zone xml:id="didascalia" ulx="1" uly="697" lrx="519" lry="814" />
+                <zone xml:id="quadro" ulx="2" uly="0" lrx="522" lry="815" />
+               
+            </surface>
+            <!--retro-->
+            <surface xml:id="c192_retro">
+                <graphic url='img/7694-192R.jpg' width='1640px' height='1050px' />
+
+                <zone xml:id="carte" ulx="402" uly="77" lrx="1167" lry="210" />
+                <zone xml:id="stamps192" ulx="1114" uly="0" lrx="1635" lry="359" />
+                <zone xml:id="ns192" ulx="986" uly="232" lrx="1114" lry="333" />
+
+                <zone xml:id="ind1" ulx="797" uly="309" lrx="1597" lry="520" />
+                <zone xml:id="ind2" ulx="794" uly="520" lrx="1559" lry="613" />
+                <zone xml:id="ind3" ulx="794" uly="619" lrx="1579" lry="768" />
+                <zone xml:id="ind4" ulx="943" uly="764" lrx="1610" lry="986" />
+
+                <zone xml:id="dateline192" ulx="642" uly="227" lrx="746" lry="968" />
+                <zone xml:id="dolce" ulx="471" uly="223" lrx="577" lry="904" />
+                <zone xml:id="affetto" ulx="267" uly="191" lrx="539" lry="894" /> 
+                <zone xml:id="sign192" ulx="125" uly="82" lrx="327" lry="899" />
+
+                <zone xml:id="diritti192" ulx="127" uly="917" lrx="431" lry="968" />
+                <zone xml:id="Schenone" ulx="23" uly="56" lrx="125" lry="835" />
+            </surface>
+        </facsimile>
+        <!--TESTO E INFO SUL FRONTE-->
+        <text xml:id="piazza">
+            <body>
+                <div type="printed" facs="#quadro">
+                    <figure>
+                        <graphic url="img/7694-192R.jpg" />
+                        <figDesc>
+                            <desc>Veduta di piazza delle erbe a <placeName ref="#VR">Verona</placeName></desc>
+                        </figDesc>
+                    </figure>
+                </div>
+                <div type="printed" facs="#didascalia">
+                    <head> 
+                        <persName ref="#ADOB">Angelo dall'oca bianca</persName>: Piazza delle Erbe a <placeName ref="#VR">Verona</placeName>. (<placeName ref="#VE">Venezia</placeName>, Galleria d'Arte Moderna) 
+                    </head>
+                </div>
+            </body>
+        </text>
+        <!--INSIEME DEI TESTI SUL RETRO-->
+        <text xml:id="posta">
+            <body>
+                <div type="printed" facs="#carte">
+                    <lb/><p>CARTOLINA POSTALE</p>
+                    <lb/><p> CARTE POSTALE </p>
+                </div>
+
+                <div type="stamp" facs="#stamps192">
+                    <p>
+                        <!--TIMBRI-->
+                        <stamp type="postmark">
+                            Il timbro è sbiadito, riporta questi dati leggibili:
+                            <mentioned><placeName ref="#MO"> MODE <unclear reason="faded">NA</unclear> </placeName> </mentioned>
+                            <mentioned> <unclear reason="faded">FERROVIA</unclear>  </mentioned>
+                            <date when="1917"> <unclear reason="faded">29.</unclear>  </date>
+                        </stamp>
+                    </p>
+                    <p>
+                        <!--FRANCOBOLLO-->
+                        <stamp type="postage"> Francobollo  <orgName type="service">Poste Italiane</orgName> da 5 centesimi </stamp>
+                    </p>
+                </div>
+                    
+
+                <div type="handwritten" facs="#ns192">
+                    <p>  Numero di serie per archiviazione: <num>192</num> </p>
+                </div>
+
+                <div type="printed" facs="#diritti192">
+                    <p>Diritti riservati.</p>
+                </div>
+
+                <div type="printed" facs="#Schenone">
+                    <lb/> <p>EDIZIONI</p>
+                    <lb/><p>  <orgName type="publisher">E. SCHENONE <c corresp="and" sameAs="U+0026" resp="#FP"> &#x190;</c> C.</orgName>  </p>
+                    <p>
+                        <address>
+                            <lb/> <addrLine> Viale Magenta <abbr corresp="Numero">N.</abbr> <num>10</num> </addrLine>
+                            <lb/> <addrLine>  <placeName ref="#MI"> MILANO </placeName>  </addrLine>
+                        </address>
+                    </p>
+                </div>
+            </body>
+        </text>
+
+        <text xml:id="pensiero">
+            <body>
+                <div type="handwritten">
+                    <opener>
+                        <dateline facs="#dateline192">
+                            <placeName ref="#MO">Modena</placeName>
+                            <date when="1917-06-30">lì 30/6 1917</date>
+                        </dateline>
+                    </opener>
+                    <div facs="#dolce">
+                        <p>Un dolce pensiero.</p>
+                    </div>
+                    <closer>
+                        <salute facs="#affetto">Affettuosamente tuo</salute>
+                        <signed facs="#sign192">
+                            <persName ref="#Giovanni">Giovannino</persName>
+                        </signed>
+                    </closer>
+                </div>
+            </body>
+        </text>
+
+
+        <text xml:id="address192">
+            <body>
+                <div>
+                    <ab>
+                        <address>
+                            <addrLine facs="#ind1">
+                                <rs> <!--referring string-->
+                                  <!--  <abbr corresp="Gentile" type="opening formula"> -->
+                                    <choice resp="#FP">
+                                            <orig>Gent.</orig>
+                                            <corr n="1">
+                                                <choice>
+                                                    <abbr>Gent.ma</abbr>
+                                                    <expan>Gentilissima</expan>
+                                                </choice>
+                                            </corr>
+                                        </choice>
+                                    </abbr>
+                                    <abbr corresp="Signorina" type="opening formula">
+                                        <choice resp="#FP">
+                                            <orig>Sig.</orig>
+                                            <corr n="1">Sig.na</corr>
+                                        </choice>
+                                    </abbr>
+                                </rs>
+                            </addrLine>
+
+                            <addrLine facs="#ind2">
+                                <persName ref="#Oliva">
+                                    <forename>Oliva</forename> <surname>Turtura</surname>
+                                </persName>
+                            </addrLine>
+
+                            <street facs="#ind3">Via <name> Girolamo Ro<c corresp="s">&#x17f;</c>si </name> <num>58</num> </street>
+
+                            <addrLine facs="#ind4">
+                                <placeName ref="#RA">Ravenna</placeName>
+                            </addrLine>
+                        </address>
+                    </ab>
+                </div>
+            </body>
+        </text>
+    </TEI>
+    <!--CONCLUSIONE TEI GENERALE-->
+</TEI>
