@@ -1,2 +1,2 @@
-# codifica-di-testi
+# Codifica di Testi
 Consegna progetto ed esercizi in itinere per il corso di Codifica di Testi, a.a. 2019/2020
