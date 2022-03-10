@@ -114,7 +114,7 @@
                         <xsl:value-of select="./tei:text[@xml:id='nostalgia']//tei:opener/tei:dateline"/>
                     </xsl:when>
                     <xsl:otherwise>
-                       - <xsl:value-of select="./tei:text[@xml:id='pensiero']//tei:opener/tei:dateline"/> -
+                        <xsl:value-of select="./tei:text[@xml:id='pensiero']//tei:opener/tei:dateline"/> -
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:element>
